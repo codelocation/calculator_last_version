@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper2">
+            <div class="scoreboard">0</div>
+            <div class="wrapper">
+                <div class="blocks1">
+                    <div class="block_a">
+                        <div class="elem" id='del' onclick="writeSymbolToScoreboard('.')">.</div>
+                        <div class="elem" id='/' onclick="writeSymbolToScoreboard('/')">/</div>
+                        <div class="elem" id='*' onclick="writeSymbolToScoreboard('*')">*</div>
+                    </div>
+                    <div class="block_a">
+                        <div class="elem" id='7' onclick="writeSymbolToScoreboard('7')">7</div>
+                        <div class="elem" id='8' onclick="writeSymbolToScoreboard('8')">8</div>
+                        <div class="elem" id='9' onclick="writeSymbolToScoreboard('9')">9</div>
+                    </div>
+                    <div class="block_a">
+                        <div class="elem" id='4' onclick="writeSymbolToScoreboard('4')">4</div>
+                        <div class="elem" id='5' onclick="writeSymbolToScoreboard('5')">5</div>
+                        <div class="elem" id='6' onclick="writeSymbolToScoreboard('6')">6</div>
+                    </div>
+                    <div class="block_a">
+                        <div class="elem" id='1' onclick="writeSymbolToScoreboard('1')">1</div>
+                        <div class="elem" id='2' onclick="writeSymbolToScoreboard('2')">2</div>
+                        <div class="elem" id='3' onclick="writeSymbolToScoreboard('3')">3</div>
+                    </div>
+                    <div class="block_b">
+                        <div class="elem" id='0' onclick="writeSymbolToScoreboard('0')">0</div>
+                        <div class="elem" onclick="writeSymbolToScoreboard('+')">+</div>
+                        <div class="elem" id='-' onclick="writeSymbolToScoreboard('-')">-</div>
+                    </div>
+                </div>
+                <div class="blocks1 blocks2">
+                    <div class="elem" id='del' onclick="writeDel()">del</div>
+                    <div class="elem" id='del all' onclick="writeDelAll()">del all</div>
+                    <div class="elem" id="()" onclick="writeBracket()">( )</div>
+                    <div class="elem" id='+/-' onclick="writeChange()">+/-</div>
+                    <div class="elem" id='=' onclick="writeEnter()" style="flex-basis: 20%;">=</div>
+                </div>
+            </div>
+        </div>
+        <script src="input.js"></script>
+    </body>
+</html>

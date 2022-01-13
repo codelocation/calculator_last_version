@@ -1,0 +1,121 @@
+body {
+    display: block;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+ .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+
+ .blocks1 {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     max-width: 200px;
+     width: 70vw;
+     height: 200px;
+     padding: 20px;
+     background-color: antiquewhite;
+     border: 2px solid indianred;
+ }
+
+ .block_a {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-basis: 15%;
+ }
+
+ .block_b {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-basis: 20%;
+ }
+
+ .elem {
+     flex-basis: 30%;
+     height: 100%;
+     width: 100%;
+     border: 1px solid indianred; 
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     cursor: pointer;
+ }
+
+ .elem:hover {
+    transform: scale(1.1, 1.1);
+ }
+ .blocks1.blocks2 {/*
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px;
+     height: 200px;
+     background-color: antiquewhite;
+     border: 2px solid indianred;*/
+     border-left: none;
+     width: 15vw;
+     max-width: 70px;
+ }
+
+ .blocks1.blocks2 > .elem {
+    flex-basis: 15%;
+ }
+
+ .block_c {
+     flex-basis: 14%;
+     display: flex;
+     align-items: center;
+ }
+
+ .block_d {
+     flex-basis: 37%;
+     display: flex;
+     align-items: center;
+ }
+
+ .wrapper2 {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+     width: fit-content;
+     margin: auto;
+ }
+
+ .scoreboard {
+    background-color: antiquewhite;
+    padding: 20px;
+    border: 2px solid indianred;
+    border-bottom: none;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: right;
+    max-width: 358px;
+ }
+
+ @media screen and (max-width: 319px){
+     .blocks1 {
+         padding: 5px;
+     }
+     .blocks2 {
+         padding: 5px;
+     }
+     .scoreboard {
+         padding: 10px;
+     }
+ }
